@@ -17,7 +17,7 @@ export default function ChatMessage({role, content}: ChatMessageProps) {
                     </div>
                 )
             }
-            <div className={`mb-2 p-2 rounded-md max-w-3/4 text-left ${role === "assistant" ? "bg-accent text-text-secondary" : "bg-text-primary text-bg justify-self-end"} w-fit text-sm`}>
+            <div className={`flex mb-2 p-2 rounded-md max-w-3/4 text-left ${role === "assistant" ? "bg-accent text-text-secondary" : "bg-text-primary text-bg justify-self-end"} w-fit text-sm`}>
             {content}
             </div>
         </>
