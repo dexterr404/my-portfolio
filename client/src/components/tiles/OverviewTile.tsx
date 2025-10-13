@@ -25,7 +25,7 @@ export default function OverviewTile() {
                                 Send email
                             </Button>
                         </a>
-                        <a download href="../../../public/Dexter_Javier_Resume.pdf">
+                        <a download href="/Dexter_Javier_Resume.pdf">
                             <Button className="text-xs bg-text-primary text-bg" icon={Download}>
                                 Resume
                             </Button>
