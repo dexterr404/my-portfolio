@@ -63,7 +63,7 @@ export default function ChatWindow({onClose}: ChatWindowProps) {
     };
     
     return(
-        <div className="absolute bento-tile min-w-md bg-bg shadow-md border-border border rounded-md bottom-full -translate-y-2 right-0">
+        <div className="absolute bento-tile min-w-82 sm:min-w-sm md:min-w-md bg-bg shadow-md border-border border rounded-md bottom-full -translate-y-2 right-0">
             <div className="flex items-center gap-2 py-3 px-3 border-b-1 border-border relative">
                 <Avatar size={32} source={MyPic} rounded/>
                 <div className="flex flex-col gap-0 items-start">
@@ -74,7 +74,7 @@ export default function ChatWindow({onClose}: ChatWindowProps) {
                 onClick={() => onClose()}
                 icon={X} className="absolute top-4 right-2 text-text-primary"/>
             </div>
-            <div className="min-h-110 h-110 overflow-y-auto overflow-x-hidden p-4">
+            <div className="h-80 sm:min-h-100 sm:h-100 overflow-y-auto overflow-x-hidden p-4">
                 {
                     messages.map((message, index) => 
                     (
@@ -102,8 +102,8 @@ export default function ChatWindow({onClose}: ChatWindowProps) {
             onSend={handleSendMessage}
             input={input}
             setInput={setInput}/>
-            <div className="flex px-3 py-2 justify-between text-xs text-text-primary">
-                <span>Ask me about me, my hobbies, programming, web dev, tech</span>
+            <div className="flex px-3 py-2 gap-1 justify-between text-xs text-text-primary">
+                <span className="text-left">Ask me about me, my hobbies, programming, web dev, tech</span>
                 <span>{input.length}/200</span>
             </div>
         </div>
