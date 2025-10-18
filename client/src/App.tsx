@@ -6,6 +6,7 @@ import TechStack from './pages/TechStack'
 import Project from './pages/Project'
 import Blog from './pages/blogs/Blog'
 import SweetnessOfDebugging from './pages/blogs/SweetnessOfDebugging'
+import NotFound from './pages/NotFound'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       <Route path='/projects/:projectId' element={<Project />}/>
       <Route path='/' element={<BentoGrid />}/>
       <Route path='/blogs' element={<Blog />}/>
-      <Route path='/blogs/sweetness-of-debugging' element={<SweetnessOfDebugging />} />
+      <Route path='/blogs/sweetness-of-debugging' element={<SweetnessOfDebugging />}/>
+      <Route path='*' element={<NotFound />}/>
     </Routes> 
     </>
   )

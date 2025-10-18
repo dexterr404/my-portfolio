@@ -28,7 +28,7 @@ export default function BlogTile() {
                     </div>
                 ) : (
                     // Blog posts list
-                    <div className="flex flex-col gap-1 w-full">
+                    <div className="relative flex flex-col gap-1 w-full">
                         {blogPosts.slice(0, 1).map((post, index) => (
                             <Button 
                             key={index}
@@ -51,7 +51,7 @@ export default function BlogTile() {
                                             )}
                                         </div>
                                     </div>
-                                    <ArrowUpRight className="w-4 h-4 text-text-primary group-hover:text-text-secondary transition-colors flex-shrink-0" />
+                                    <ArrowUpRight className="absolute right-2 w-4 h-4 text-text-primary group-hover:text-text-secondary transition-colors flex-shrink-0" />
                                 </div>
                             </Button>
                         ))}

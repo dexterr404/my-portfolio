@@ -21,9 +21,13 @@ export default function Blog() {
             </section>
             <section className="grid grid-cols-1 gap-2 py-4">
                 {
-                    blogPosts.map((blog,index) => (
-                        <BlogCard blog={blog} key={index}/>
-                    ))
+                    blogPosts.length === 0 ? (
+                        <Title text="No blog posts yet."/>
+                    ) : (
+                        blogPosts.map((blog,index) => (
+                            <BlogCard blog={blog} key={index}/>
+                        ))
+                    )
                 }
             </section>
         </main>

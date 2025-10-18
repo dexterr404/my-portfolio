@@ -1,4 +1,4 @@
-import { Link } from "lucide-react"
+import { ExternalLink, Link } from "lucide-react"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import BentoTile from "../BentoGrid/BentoTile"
@@ -12,10 +12,10 @@ export default function SocialTile() {
                 <Title icon={Link} text="Socials" className="font-medium text-sm"/>
                 <div className="flex flex-col gap-1 w-full">
                     <a href="https://github.com/dexterr404" target="_blank" rel="noopener noreferrer">
-                        <Chip icon={<FaGithub className="w-4 h-4" />} full label="GitHub" className="border-1 px-3 py-1 border-border rounded-md"/>
+                        <Chip icon={<FaGithub className="w-4 h-4" />} full label="GitHub" className="border-1 px-3 py-1 border-border rounded-md hover:bg-accent/50 transition-colors" externalLink={ExternalLink}/>
                     </a>
                     <a href="https://www.linkedin.com/in/dexter-ian-javier-09397637b/" target="_blank" rel="noopener noreferrer">
-                        <Chip icon={<FaLinkedin className="w-4 h-4" />} full label="LinkedIn" className="border-1 px-3 py-1 border-border rounded-md"/>
+                        <Chip icon={<FaLinkedin className="w-4 h-4" />} full label="LinkedIn" className="border-1 px-3 py-1 border-border rounded-md hover:bg-accent/50 transition-colors" externalLink={ExternalLink}/>
                     </a>
                 </div>
             </div>
