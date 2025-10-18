@@ -41,12 +41,12 @@ export default function ProjectTile() {
                     <div className="absolute left-0 top-1/2">
                         <Button
                         onClick={handlePrevProject}
-                        icon={ChevronLeft} buttonSize="size-6" className="text-bg opacity-20 bg-text-primary"/>
+                        icon={ChevronLeft} buttonSize="size-6" className="text-bg opacity-20 bg-border"/>
                     </div>
                     <div className="absolute right-0 top-1/2">
                         <Button 
                         onClick={handleNextProject}
-                        icon={ChevronRight} buttonSize="size-6" className="text-bg opacity-20 bg-text-primary"/>
+                        icon={ChevronRight} buttonSize="size-6" className="text-bg opacity-20 bg-border"/>
                     </div>
                 </div>
             </div>

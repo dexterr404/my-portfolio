@@ -6,6 +6,11 @@ import AquaPonnectControl from "../assets/projects/aquaponnect/AquaPonnectContro
 import AquaPonnectGraph from "../assets/projects/aquaponnect/AquaPonnectGraph.webp"
 import AquaPonnectMonitor from "../assets/projects/aquaponnect/AquaPonnectMonitor.webp"
 import AquaPonnectCertificate from "../assets/projects/aquaponnect/AquaPonnectCertificate.webp"
+import ApplAiStatus from "../assets/projects/applai/ApplAiStatus.webp"
+import ApplAiSort from "../assets/projects/applai/ApplAiSort.webp"
+import ApplAiInsight from "../assets/projects/applai/ApplAiInsight.webp"
+import ApplAiForm from "../assets/projects/applai/ApplAiJobForm.webp"
+import ApplAiLogin from "../assets/projects/applai/ApplAiLogin.webp"
 
 type Snippets = {
     source: string;
@@ -134,6 +139,91 @@ export const projects: Project[] = [
         snippets: [{ source: TaskWiseMarketingWebsite, caption: "Marketing Website"}, { source: TaskWiseTeamCardView, caption: "Team Tasks Card View"}, { source: TaskWiseDashboard, caption: "Dashboard"}, { source: TaskWiseAiAssistant, caption: "AI Assistant"}],
         repo: "https://github.com/dexterr404/task-wise",
         live: "https://task-wise-nine.vercel.app/"
+    },
+    {
+        id: "applai",
+        title: "ApplAi",
+        shortdesc: "AI-powered job application tracker and interview preparation platform built with TypeScript, React, Node.js, and PostgreSQL. Features secure resume management, smart job tracking, and GPT-driven interview insights.",
+        longdesc: `🚀 ApplAi — Project Overview
+        ApplAi is a smart platform for managing job applications while preparing for interviews with AI assistance. It combines comprehensive tracking, secure resume storage, and OpenAI-powered insights to help users optimize their job search and interview preparation.
+
+        ✨ Key Features
+
+        📋 Job Application Management
+        ● Create, read, update, and delete job applications
+        ● Track company, position, location, salary, and application dates
+        ● Smart filtering and search for easy management
+        ● Direct links to job postings
+        ● Status tracking for all application stages
+
+        📄 Resume Management
+        ● Securely upload resumes to Cloudinary
+        ● Organize resumes per job application
+        ● Preview or download resumes directly from job cards
+        ● One-click resume replacement
+
+        🧠 AI-Powered Interview Preparation
+        ● Generate role-specific interview questions using OpenAI GPT
+        ● Receive tailored preparation tips per job
+        ● Smart insights and professional advice
+        ● Cached AI responses for optimal performance and cost reduction
+        ● Persistent storage of AI insights for future reference
+
+        🔐 Secure Authentication
+        ● Google OAuth2 login integration
+        ● JWT-based secure sessions
+        ● Automatic logout on token expiration
+        ● Protected API endpoints
+
+        💼 User Experience
+        ● Modern UI built with React, Tailwind CSS, and TypeScript
+        ● Fully responsive design across all devices
+        ● Fast API-driven updates using React Query
+        ● Intuitive navigation with React Router DOM
+
+        🛠️ Tech Stack
+
+        Frontend
+        ⚛️ React + TypeScript (Vite)
+        💨 Tailwind CSS
+        🔄 React Query (TanStack)
+        🧭 React Router DOM
+
+        Backend
+        🧩 Node.js + Express + TypeScript
+        🐘 PostgreSQL (Neon)
+        🔐 JWT + Google OAuth2
+        🤖 OpenAI API
+
+        Infrastructure & Services
+        ☁️ Vercel (Frontend hosting)
+        🚀 Railway (Backend deployment)
+        📂 Cloudinary (Resume storage)
+
+        ⚡ Architecture Highlights
+        ● Clean relational database design
+        ● JWT-protected API routes
+        ● AI insights cached per job
+        ● Modern, responsive interface
+
+        📊 Planned Features / Roadmap
+        ● Refresh token support for automatic re-authentication
+        ● Email notifications for deadlines
+        ● Advanced analytics dashboard
+        ● Resume parsing and keyword matching
+        ● Multi-resume support and team collaboration
+        ● Calendar integration and cover letter generator
+
+        `,
+        snippets: [
+            { source: ApplAiLogin, caption: "Login Page" },
+            { source: ApplAiStatus, caption: "Job Applications Status" },
+            { source: ApplAiForm, caption: "Job Application Form" },
+            { source: ApplAiInsight, caption: "AI Interview Preparation" },
+            { source: ApplAiSort, caption: "Job Sorting" }
+        ],
+        repo: "https://github.com/dexterr404/applai",
+        live: "https://applai.dexterr404.dev"
     },
     {
         id: "aquaponnect",

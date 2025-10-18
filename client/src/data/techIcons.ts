@@ -20,9 +20,9 @@ export const backendTechIcons: TechIcon[] = [
   { name: "expressjs", label: "Express" },
   { name: "mongodb", label: "MongoDB" },
   { name: "mysql", label: "MySQL" },
+  { name: "postgresql", label: "PostgreSQL" },
   { name: "firebase", label: "Firebase" },
   { name: "supabase", label: "Supabase" },
-  { name: "mongoose", label: "Mongoose" },
 ];
 
 export const devOpsCloudTechIcons: TechIcon[] = [

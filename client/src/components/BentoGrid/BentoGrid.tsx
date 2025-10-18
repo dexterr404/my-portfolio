@@ -1,5 +1,6 @@
 import ChatWidget from "../ChatWidget/ChatWidget"
 import AboutTile from "../tiles/AboutTile"
+import BlogTile from "../tiles/BlogTile"
 import ExperienceTile from "../tiles/ExperienceTile"
 import MembershipTile from "../tiles/MembershipTile"
 import OverviewTile from "../tiles/OverviewTile"
@@ -14,6 +15,7 @@ export default function BentoGrid() {
             <AboutTile />
             <ExperienceTile />
             <TechStackTile />
+            <BlogTile />
             <ProjectTile />
             <MembershipTile />
             <SocialTile />
