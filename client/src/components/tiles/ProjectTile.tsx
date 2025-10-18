@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Blocks, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight, Blocks, ChevronLeft, ChevronRight } from "lucide-react";
 import { projects } from "../../data/projects";
 
 import BentoTile from "../BentoGrid/BentoTile";
@@ -26,7 +26,7 @@ export default function ProjectTile() {
                 <div className="flex relative flex-col">
                     <Title icon={Blocks} text="Project" />
                     <Link to={`/projects/${selectedProject.id}`}>
-                        <Button icon={ExternalLink} className="absolute -top-1 -right-1 text-text-primary"/>
+                        <Button icon={ArrowUpRight} className="absolute -top-1 -right-1 text-text-primary"/>
                     </Link>
                     {selectedProject && (
                         <ProjectCard
