@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5173", process.env.APP_BASE_URL as string],
+    origin: ["http://localhost:5173", process.env.APP_BASE_URL  as string, process.env.APP_BASE_URL2 as string],
 }));
 
 app.use(express.json());
