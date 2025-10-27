@@ -11,6 +11,12 @@ import ApplAiSort from "../assets/projects/applai/ApplAiSort.webp"
 import ApplAiInsight from "../assets/projects/applai/ApplAiInsight.webp"
 import ApplAiForm from "../assets/projects/applai/ApplAiJobForm.webp"
 import ApplAiLogin from "../assets/projects/applai/ApplAiLogin.webp"
+import WatchRoomLanding from "../assets/projects/watchroom/watch-room-landing.webp"
+import WatchRoomAuth from "../assets/projects/watchroom/watch-room-auth.webp"
+import WatchRoomCreate from "../assets/projects/watchroom/watch-room-create.webp"
+import WatchRoomJoin from "../assets/projects/watchroom/watch-room-join.webp"
+import WatchRoomWatch from "../assets/projects/watchroom/watch-room-watch.webp"
+import WatchRoomSettings from "../assets/projects/watchroom/watch-room-settings.webp"
 
 type Snippets = {
     source: string;
@@ -139,6 +145,104 @@ export const projects: Project[] = [
         snippets: [{ source: TaskWiseMarketingWebsite, caption: "Marketing Website"}, { source: TaskWiseTeamCardView, caption: "Team Tasks Card View"}, { source: TaskWiseDashboard, caption: "Dashboard"}, { source: TaskWiseAiAssistant, caption: "AI Assistant"}],
         repo: "https://github.com/dexterr404/task-wise",
         live: "https://task-wise-nine.vercel.app/"
+    },
+        {
+        id: "watchroom",
+            title: "WatchRoom",
+            shortdesc: "Real-time video watch and chat platform built with React, TypeScript, Node.js, Supabase, and Mux. Enables users to stream, chat, and share videos together in private or public rooms with secure authentication and live collaboration.",
+            longdesc: `🎬 WatchRoom — Project Overview
+            WatchRoom is a modern, full-stack platform that lets users watch videos together in real time while chatting, sharing reactions, and managing participants securely. It’s designed for movie nights, study sessions, and team watch parties — combining live video playback, chat, and access control in one seamless experience.
+
+            ✨ Key Features
+
+            🎥 Video Streaming
+            ● Watch videos together — YouTube, Vimeo, or any uploaded video
+            ● Adaptive bitrate streaming for smooth playback on any connection
+            ● Automatic thumbnail generation and room-based video management
+
+            💬 Live Chat & Interaction
+            ● Real-time messaging using Supabase Realtime
+            ● Auto-scroll for new messages and live participant updates
+            ● Timestamps, sender names, and chat moderation options
+
+            🔒 Private & Secure Rooms
+            ● Create private or public rooms with shareable access keys
+            ● Room owners can regenerate keys to block unwanted users
+            ● Instant “kick user” control for active moderation
+
+            🧍 Participant System
+            ● Displays live participant list
+            ● Distinguishes between room owner and regular members
+            ● Automatic removal of disconnected users
+
+            📤 Video Uploads via Mux
+            ● Secure upload endpoint to Mux
+            ● Automatic encoding and playback-ready streaming links
+            ● Playback IDs and Asset IDs stored per room
+
+            🔐 Authentication & Security
+            ● Google OAuth2 login via Supabase Auth
+            ● JWT-secured API calls for backend access
+            ● Row Level Security (RLS) enforced on all Supabase tables
+            ● HTTPS and environment-based configuration in production
+
+            ⚙️ Owner Controls
+            ● Toggle privacy (public/private)
+            ● Manage participants and regenerate keys
+            ● Update room settings, title, and thumbnails
+            ● Delete or reset rooms instantly
+
+            💼 User Experience
+            ● Modern, responsive interface built with React and Tailwind CSS
+            ● Real-time updates using React Query (TanStack)
+            ● Fast navigation and state management with React Router
+            ● Optimized for mobile, tablet, and desktop experiences
+
+            🛠️ Tech Stack
+
+            Frontend
+            ⚛️ React + TypeScript (Vite)
+            💨 Tailwind CSS
+            🔄 React Query (TanStack)
+            🧭 React Router DOM
+            🎞️ React Player
+
+            Backend
+            🧩 Node.js + Express + TypeScript
+            🗄️ PostgreSQL (via Supabase)
+            🔐 Supabase Auth + JWT validation
+            📡 Supabase Realtime (chat + participants)
+            🎬 Mux API (video upload & streaming)
+
+            Infrastructure & Services
+            ☁️ Render (Backend deployment)
+            🚀 Vercel (Frontend hosting)
+            🎞️ Mux (Video encoding and playback)
+            🐘 Supabase (Database, Auth, and Realtime API)
+
+            ⚡ Architecture Highlights
+            ● Real-time messaging and participant sync with Supabase Realtime
+            ● Secure Mux integration for adaptive video streaming
+            ● Clean RESTful API design
+            ● Modular code structure for scalability and clarity
+
+            📊 Planned Features / Roadmap
+            ● Synced play, pause, and seek controls across all users
+            ● Emoji and reaction support in chat
+            ● Enhanced Mux thumbnail previews
+            ● Owner-only announcements and pinned messages
+            ● Improved analytics for room activity
+            `,
+        snippets: [
+            { source: WatchRoomLanding, caption: "Landing Page" },
+            { source: WatchRoomAuth, caption: "Authentication" },
+            { source: WatchRoomCreate, caption: "Create Room " },
+            { source: WatchRoomJoin, caption: "Join Room" },
+            { source: WatchRoomWatch, caption: "Watch Room" },
+            { source: WatchRoomSettings, caption: "Watch Room Settings"}
+        ],
+        repo: "https://github.com/dexterr404/watch-room",
+        live: "https://watch-room.dexterr404.dev/"
     },
     {
         id: "applai",
