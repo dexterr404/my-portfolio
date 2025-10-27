@@ -2,6 +2,8 @@ import TaskWiseMarketingWebsite from "../assets/projects/taskwise/taskwise-promo
 import TaskWiseTeamCardView from "../assets/projects/taskwise/taskwise-team-tasks-cardview.webp"
 import TaskWiseDashboard from "../assets/projects/taskwise/taskwise-dashboard.webp"
 import TaskWiseAiAssistant from "../assets/projects/taskwise/taskwise-ai-assistant.webp"
+import TaskWiseTeamProfiles from "../assets/projects/taskwise/taskwise-team-profiles.webp"
+import TaskWiseTeamInbox from "../assets/projects/taskwise/taskwise-team-inbox.webp"
 import AquaPonnectControl from "../assets/projects/aquaponnect/AquaPonnectControl.webp"
 import AquaPonnectGraph from "../assets/projects/aquaponnect/AquaPonnectGraph.webp"
 import AquaPonnectMonitor from "../assets/projects/aquaponnect/AquaPonnectMonitor.webp"
@@ -142,7 +144,7 @@ export const projects: Project[] = [
         ● Optimized for low-latency team interactions
 
         `,
-        snippets: [{ source: TaskWiseMarketingWebsite, caption: "Marketing Website"}, { source: TaskWiseTeamCardView, caption: "Team Tasks Card View"}, { source: TaskWiseDashboard, caption: "Dashboard"}, { source: TaskWiseAiAssistant, caption: "AI Assistant"}],
+        snippets: [{ source: TaskWiseMarketingWebsite, caption: "Marketing Website"}, { source: TaskWiseTeamCardView, caption: "Team Tasks Card View"}, { source: TaskWiseDashboard, caption: "Dashboard"}, { source: TaskWiseAiAssistant, caption: "AI Assistant"}, { source: TaskWiseTeamProfiles, caption: "Team Members"}, { source: TaskWiseTeamInbox, caption: "Team inbox and user notifications"}],
         repo: "https://github.com/dexterr404/task-wise",
         live: "https://task-wise-nine.vercel.app/"
     },
