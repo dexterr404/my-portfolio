@@ -1,5 +1,5 @@
 import express from "express";
-import { chatService } from "../services/chatService.ts";
+import { chatService } from "../services/chatService";
 
 export const chatController = async(req: express.Request,res: express.Response) => {
     try {

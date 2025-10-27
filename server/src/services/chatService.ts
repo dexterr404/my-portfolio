@@ -1,5 +1,5 @@
-import { client } from "./openAiService.ts";
-import { supabase } from "./supabaseService.ts";
+import { client } from "./openAiService";
+import { supabase } from "./supabaseService";
 
 type MatchResult = {
   id: string;

@@ -15,7 +15,7 @@ const supabase = createClient(
 
 // 🧠 My personal context in first person
 const aboutMeSnippets = [
-  "The largest and most significant project I have worked on is TaskWise, a full-stack, multi-tenant SaaS application. It features real-time updates, customizable user profiles, complete activity history, smart notifications, role-based access control, secure authentication, and subscription/payment management. TaskWise also includes AI-powered chat and insights tailored to users’ current tasks, interactive dashboards, responsive UI, advanced data querying with search and filters, and task commenting capabilities.",
+  "ApplAi is a modern web application I developed using the PERN stack (PostgreSQL, Express.js, React, Node.js). It features Google OAuth2 for secure authentication and integrates the OpenAI API with RAG (Retrieval-Augmented Generation) using vector embeddings to provide context-aware, personalized interview preparation based on each user’s job applications.",
 ];
 
 (async () => {
