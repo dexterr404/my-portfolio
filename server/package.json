@@ -6,7 +6,6 @@
     "express": "^5.1.0",
     "openai": "^6.3.0"
   },
-  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
