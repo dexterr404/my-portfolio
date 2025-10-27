@@ -10,10 +10,10 @@ export default function AboutTile() {
             <div className="text-sm">
                 <Title icon={UserRound} text="About" />
                 <Paragraph indent>
-                    I’m a passionate Full-Stack Developer with deep experience in the MERN stack, building web, mobile, and desktop applications with clean architecture, high performance, and intuitive user experiences. I’ve led the development of end-to-end projects, including AI-powered SaaS platforms and real-time IoT systems, turning complex requirements into practical, user-friendly solutions.
+                    I’m a Full-Stack Developer with expertise in React, TypeScript, and Node.js, building scalable, high-performance applications that blend clean architecture with intuitive design. I’ve developed and deployed AI-powered SaaS platforms and real-time web applications using technologies like Supabase, PostgreSQL, OpenAI API, and WebSockets, turning complex ideas into seamless, user-centered experiences.
                 </Paragraph>
                 <Paragraph indent>
-                    I thrive on collaboration and mentorship, enjoying the process of working with teams, sharing knowledge, and finding elegant solutions to challenging problems. Lately, my curiosity has led me into the world of AI and Generative AI, where I focus on creating smarter, adaptive applications that provide real value. I’m committed to learning new technologies and applying best practices, always seeking innovative ways to enhance functionality and user experience.
+                    I thrive on collaboration and problem-solving, sharing knowledge, refining workflows, and designing systems that balance performance with simplicity. Lately, my focus has been on Generative AI and RAG-based applications, exploring how intelligent systems can elevate user interaction and functionality. I’m driven by curiosity, continuous learning, and the goal of building software that feels fast, reliable, and genuinely impactful.
                 </Paragraph>
             </div>
         </BentoTile>
